@@ -34,26 +34,6 @@ public class MergeSort {
 
     }
 
-    public static void main(String a[]) {
-        MergeSort mergeSort = new MergeSort();
-        Scanner scn = new Scanner(System.in);
-
-        System.out.println("Enter size");
-        mergeSort.size = scn.nextInt();
-        int arr[] = new int[mergeSort.size];
-
-        for (int i = 0; i < mergeSort.size; i++)
-            arr[i] = scn.nextInt();
-
-        mergeSort.mergesort(arr);
-
-        System.out.println("The sorted array is:");
-        for (int i = 0; i < arr.length; i++)
-            System.out.print(arr[i] + " ");
-
-
-    }
-
     public void mergesort(int array[]) {
         if (array.length < 2) return;
 
@@ -77,4 +57,26 @@ public class MergeSort {
         mergesort(right);
         doMerge(left, right, array);
     }
+
+    public static void main(String a[]) {
+        MergeSort mergeSort = new MergeSort();
+        Scanner scn = new Scanner(System.in);
+
+        System.out.println("Enter size");
+        mergeSort.size = scn.nextInt();
+        int arr[] = new int[mergeSort.size];
+
+        for (int i = 0; i < mergeSort.size; i++)
+            arr[i] = scn.nextInt();
+
+        mergeSort.mergesort(arr);
+
+        System.out.println("The sorted array is:");
+        for (int i = 0; i < arr.length; i++)
+            System.out.print(arr[i] + " ");
+
+
+    }
+
+
 }
