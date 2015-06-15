@@ -80,6 +80,7 @@ public class MergeSort {
 
         mergeSort.mergesort(arr);
 
+        System.out.println("The sorted array is:");
         for (int i = 0; i<arr.length;i++)
             System.out.print(arr[i]+ " ");
 
