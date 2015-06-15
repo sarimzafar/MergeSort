@@ -7,8 +7,6 @@ import java.util.Scanner;
  */
 public class MergeSort {
     int size;
-
-
     public void mergesort(int array[])
     {
         if(array.length<2) return;
