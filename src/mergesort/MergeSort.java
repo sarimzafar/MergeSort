@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 /**
  * Created by shassanzafar on 6/15/2015.
+ * Created by shassanzafar on 6/15/2015.
  */
 public class MergeSort {
     int size;
@@ -31,7 +32,6 @@ public class MergeSort {
             k++;
             j++;
         }
-
     }
 
     public void mergesort(int array[]) {
